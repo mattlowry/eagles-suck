@@ -35,6 +35,45 @@ body::before {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23800020' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.header-banner {
+    background-color: var(--dark-burgundy);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 5;
+    border-bottom: 2px solid var(--gold);
+}
+
+.phone-banner {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.header-banner a {
+    color: var(--gold);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+    animation: pulse-phone 2s infinite;
+}
+
+@keyframes pulse-phone {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.header-banner a:hover {
+    background-color: rgba(255,215,0,0.2);
+    transform: scale(1.05);
+}
+
 header {
     background: linear-gradient(135deg, var(--burgundy) 0%, var(--dark-burgundy) 100%);
     color: var(--white);
@@ -612,6 +651,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .header-banner {
+        padding: 0.8rem 0;
+    }
+    
+    .phone-banner {
+        font-size: 1rem;
+    }
+    
+    .header-banner a {
+        margin-top: 0.3rem;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem;
+    }
+    
     nav {
         padding: 0.3rem 0;
     }
