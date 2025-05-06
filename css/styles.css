@@ -468,11 +468,21 @@ h3::after {
     margin-top: 1.5rem;
 }
 
-.fact-image {
+.fact-image, .greg-image {
     max-width: 90%;
     border-radius: 8px;
     border: 3px solid var(--burgundy);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.greg-image {
+    max-width: 70%;
+    transition: transform 0.5s ease;
+}
+
+.greg-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .image-caption {
@@ -480,6 +490,13 @@ h3::after {
     font-style: italic;
     color: var(--dark-burgundy);
     font-size: 0.9rem;
+}
+
+.redemption-image-container {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    padding: 1rem;
 }
 
 footer {
