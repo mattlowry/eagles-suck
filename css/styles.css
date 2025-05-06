@@ -206,6 +206,25 @@ h3 {
     font-style: italic;
 }
 
+.fact-image-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.fact-image {
+    max-width: 90%;
+    border-radius: 8px;
+    border: 3px solid var(--burgundy);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: var(--dark-burgundy);
+    font-size: 0.9rem;
+}
+
 footer {
     background-color: var(--dark-burgundy);
     color: var(--white);
