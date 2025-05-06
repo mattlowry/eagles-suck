@@ -1,0 +1,230 @@
+:root {
+    --burgundy: #5A1414;
+    --gold: #FFB612;
+    --dark-burgundy: #3D0000;
+    --light-gold: #FFD965;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--burgundy);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 6px solid var(--gold);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px var(--dark-burgundy);
+}
+
+.highlight {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--light-gold);
+}
+
+nav {
+    background-color: var(--dark-burgundy);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--light-gold);
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 5px solid var(--burgundy);
+}
+
+h2 {
+    color: var(--burgundy);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.image-placeholder {
+    background-color: #eee;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.feature-image {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 4px solid var(--burgundy);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.player-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    border-left: 3px solid var(--gold);
+}
+
+h3 {
+    color: var(--dark-burgundy);
+    margin-bottom: 0.5rem;
+}
+
+.prediction-list {
+    margin-left: 2rem;
+}
+
+.prediction-list li {
+    margin-bottom: 0.7rem;
+}
+
+.quote-box {
+    background-color: var(--light-gold);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.quote-image {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.coach-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    border: 2px solid var(--burgundy);
+}
+
+footer {
+    background-color: var(--dark-burgundy);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 6px solid var(--gold);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.random-fact {
+    background-color: var(--light-gold);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-style: italic;
+    border-left: 4px solid var(--burgundy);
+}
+
+.text-message {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    max-width: 80%;
+    border-left: 4px solid var(--burgundy);
+}
+
+.message-sender {
+    font-weight: bold;
+    color: var(--burgundy);
+    margin-bottom: 0.3rem;
+}
+
+.message-content {
+    background-color: #e0e0e0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+}
