@@ -1,26 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Handle navigation bar visibility on scroll for mobile
-    let lastScrollTop = 0;
-    const navbar = document.querySelector('nav');
-    const isMobile = window.innerWidth <= 768;
-    
-    window.addEventListener('scroll', function() {
-        if (isMobile) {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (currentScroll > lastScrollTop && currentScroll > 100) {
-                // Scrolling down & past header
-                navbar.style.transform = 'translateY(-100%)';
-                navbar.style.transition = 'transform 0.3s ease-in-out';
-            } else {
-                // Scrolling up
-                navbar.style.transform = 'translateY(0)';
-                navbar.style.transition = 'transform 0.3s ease-in-out';
-            }
-            
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        }
-    }, false);
     // Add smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
